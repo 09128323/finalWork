@@ -47,12 +47,14 @@ footer {
   background-color: white;
   color: black;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0px;
   position: relative;
   bottom: 0;
   width: 100%;
   height: 100%;
   border: 1px solid black;
+  display: grid;
+  justify-content: center;
 }
 
 html {
@@ -61,19 +63,20 @@ html {
 
 .logo {
   position: relative;
-  width: 100px; /* Замените на размер вашего логотипа */
-  height: 100px; /* Замените на размер вашего логотипа */
+  width: 100px;
+  height: 100px;
 }
 
 .home-logo,
 .hover-logo {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
+}
 
 .hover-logo {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.9s ease-in-out;
 }
 
 .logo:hover .hover-logo {
