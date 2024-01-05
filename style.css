@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url("logo.svg") no-repeat center;
+  height: 250px;
+  color: black;
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0px;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(172, 161, 210);
+}
+
+main {
+  font-family: "Trocchi";
+  font-size: 20px;
+  padding: 20px;
+  background: url("background.svg") no-repeat center;
+  background-size: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0px;
+  text-align: justify;
+}
+
+section {
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  position: relative;
+  width: 100px; /* Замените на размер вашего логотипа */
+  height: 100px; /* Замените на размер вашего логотипа */
+}
+
+.home-logo,
+.hover-logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+.hover-logo {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.logo:hover .hover-logo {
+  opacity: 1;
+}
+
+.logo:hover .home-logo {
+  opacity: 0;
+}
